@@ -1,0 +1,103 @@
+/*MEDIAS QUERIES*/
+
+/* SECCION INDEX */
+
+@media (min-width: 280px) and (max-width: 480px){
+
+	/* DEFINO TAMAÑO DEL LOGO*/
+
+	.botoneraprincipal {
+		
+		img{
+			width: $vw-15;
+			height: $vh-7;
+			margin-top: 10px;
+		}
+	}
+
+	/*DEFINO TAMAÑO DEL IFRAME*/
+
+	.iframe{
+		width: $w-90;
+		height: $h-auto;
+	}
+
+	/*DEFINO TAMAÑO DEL CAROUSEL*/
+
+	.carousel-item{
+		height: $vh-15;
+	}
+
+	/*AJUSTO TAMAÑO DE LOS TITULOS*/
+
+	.p{
+		width: $w-100;
+		font-size: $font14;
+	}
+}
+
+/*SECCION EQUIPOS*/
+
+	@media (min-width: 280px) and (max-width: 480px){
+
+		/*APLICO TAMAÑO AL H1*/
+		.mes{ 
+			
+			h1{
+				font-size: $font28;
+			}
+		}
+	
+		/*AJUSTO TAMAÑO DE LA IMAGEN DEL MES*/
+		
+		.mes {
+			
+			img{
+				width: $vw-75;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+/* SECCION DE GALERIA */
+
+	@media (min-width: 280px) and (max-width: 480px){
+
+		/*DEFINO TAMAÑO DEL HEADER*/
+
+		.header{
+			height: $vh-28;
+			background-repeat: no-repeat;
+		}
+
+		/*DEFINO TAMAÑO Y COLUMNAS PARA LA GALERIA*/
+			
+		.videogaleria{
+			grid-template-columns: repeat(1, 1fr);
+			justify-items: center;
+			
+			img{
+				width: $vw-90;
+			}
+		}
+
+		/*DEFINO TAMAÑO DE LOS TITULOS*/		
+
+		.titulosgaleria{
+			p{
+			flex-direction: row;
+			font-size: $font14;
+			text-align: center;
+			margin-top: 5px;
+			}
+		}
+
+		/*DEFINO TAMAÑO DE LOS ICONOS DEL FOOTER*/
+
+		a {
+			img{
+			width: $vw-8;
+			height: $h-auto;
+			}
+		}
+	}

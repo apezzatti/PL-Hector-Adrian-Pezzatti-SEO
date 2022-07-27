@@ -1,0 +1,40 @@
+/*APLICO GRID Y FLEX BOX EN SECCION GALERIA*/
+
+	/*DEFINO LA CANTIDAD DE COLUMNAS*/
+
+	.videogaleria {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+        
+        div {
+			width: $vw-35;
+			margin: 0.3vh;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+        
+            img {
+				width: $vw-35;
+				height: $vh-35;
+				object-fit: cover;
+				border-radius: $borderradius3;
+			}
+		}
+	}
+
+	/*DEFINO TAMAÑO DE LOS TIULOS Y APLICO FLEX*/		
+
+	.titulosgaleria{
+		width: $vw-55;
+		display: flex;
+		flex-direction: column;
+        
+        p{
+			font-size: $font18;
+			background-color: $bg-black;
+			color: $colorwhite;
+			font-family: $fuenteprimaria;
+            text-align: center;
+		}
+	}

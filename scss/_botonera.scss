@@ -1,0 +1,31 @@
+/*BOTONERA PRINCIPAL*/
+.botoneraprincipal{
+    background-color: $bg-black;
+    img{
+        width: $vw-10;
+        height: $vh-18;
+        margin: 15px;
+        border-radius: $borderradius1;
+        opacity: $op-70;
+    }
+
+    a{
+        color:$colorwhite;
+        text-decoration: none;
+        font-family: $fuenteprimaria;
+        font-size: $font16;
+        &:hover{
+            color: $coloryellowgreen;
+            font-weight: $text-bold;
+        }
+
+    }
+    
+    .navbar-toggler-icon {
+        background-image: $bgimg2;
+    }
+
+    .navbar-toggler {
+            border-color: $borderred;
+    }
+}

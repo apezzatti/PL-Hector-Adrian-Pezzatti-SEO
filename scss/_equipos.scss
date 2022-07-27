@@ -1,0 +1,24 @@
+/*APLICO PROPIEDADES Y ANIMACIONES A LA SECCION EQUIPOS*/
+
+	/*SECCION DESTACADO DEL MES*/
+
+	.mes img{
+		width: $w-70;
+		height: $h-30;
+		border: $borderblack;
+		border-radius: $borderradius2;
+		animation: traslado 5s;
+		position: relative;
+		object-fit: cover;
+	}
+		
+		@keyframes traslado{
+			from {
+				left: -100%;
+			}
+			to {
+				left: 0%;
+			}
+			animation-timing-function:ease-in-out;
+            
+		}

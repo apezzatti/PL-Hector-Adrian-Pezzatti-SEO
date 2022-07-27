@@ -1,0 +1,98 @@
+/*VARIABLES COMUNES*/
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: $bgimg1;
+	background-attachment: $bgattach;
+	opacity: $op-95;
+}
+
+.p{
+    width: $w-90;
+	font-size: $font16;
+	background-color: $bg-black;
+	color:$colorwhite;
+	font-family: $fuenteprimaria;
+	display: inline-table;
+}
+
+.h{
+
+	font-family: $fuentesecundaria;
+	font-size: $font18;
+}
+
+.w-90{
+	width: $w-90;
+}
+
+/*BOTONES*/
+
+.btn-{
+	width: $w-90;
+	background-color: $bg-blue;
+	color: $colorblanch;
+	margin-left: 2em;
+	margin-top: 2em;
+    &:hover{
+        color:$coloryellowgreen
+    }
+}
+
+/*IFRAMES*/
+
+.iframe{
+	width: $vw-65;
+	height: $vh-65;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*MODIFICO PROPIEDADES DEL CAROUSEL*/
+
+.carousel-item{
+	height: $vh-45;
+}
+
+/*APLICO ANIMACION EN SECCION DE EQUIPOS Y VIDEOGALERIA*/
+
+.zoom{
+	transition: all 300ms;
+	position: relative;
+	img{
+		&:hover{
+			transform: scale(1.10);
+			margin-top: 15px;
+			margin-bottom: 5px;
+			box-shadow: 7px 5px 6px 4px rgba(36,33,33,0.7);
+		}
+	}
+}
+
+/*APLICO ANIMACIONES EN EL HEADER DE LA SECCION PROMOCIONES*/
+
+/*HEADER*/
+
+.header{
+	height: $vh-45;
+	animation-name: headerani;
+	background-size: cover;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes headerani{
+	0%{background-image: url(../img/header/header.png)}
+	25%{background-image: url(../img/header/header2.png)}
+	50%{background-image: url(../img/header/header3.png)}
+	75%{background-image: url(../img/header/header4.png)}
+	100%{background-image: url(../img/header/header5.png)}
+}
