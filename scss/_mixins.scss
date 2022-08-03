@@ -1,0 +1,26 @@
+/*MIXINS*/
+
+@mixin parr {
+
+	width: $w-90;
+	font-size: $font16;
+	background-color: $bg-black;
+	color:$colorwhite;
+	font-family: $fuenteprimaria;
+	display: inline-table;
+}
+
+@mixin H {
+	font-family: $fuentesecundaria;
+	font-size: $font18;
+}
+
+@mixin medias($breakpoint){
+
+	@if $breakpoint == celular{
+		@media (min-width: 280px) and (max-width: 480px){
+
+			@content;
+		}
+	}
+}

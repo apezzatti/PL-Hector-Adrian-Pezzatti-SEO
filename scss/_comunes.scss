@@ -16,18 +16,12 @@ body{
 }
 
 .p{
-    width: $w-90;
-	font-size: $font16;
-	background-color: $bg-black;
-	color:$colorwhite;
-	font-family: $fuenteprimaria;
-	display: inline-table;
+	@include parr();
 }
 
 .h{
 
-	font-family: $fuentesecundaria;
-	font-size: $font18;
+	@include H();
 }
 
 .w-90{
@@ -38,13 +32,23 @@ body{
 
 .btn-{
 	width: $w-90;
-	background-color: $bg-blue;
+	background-color: map-get($map:$colores,$key:'azul');
 	color: $colorblanch;
 	margin-left: 2em;
 	margin-top: 2em;
     &:hover{
-        color:$coloryellowgreen
+        color:map-get($map:$colores,$key:'lima')
     }
+}
+
+.btn-radius{
+	@extend .btn-;
+	background-color: $bg-white;
+	border-radius: 3px;
+	color: $colorblack;
+	&:hover{
+		color: $colorred;
+	}
 }
 
 /*IFRAMES*/
@@ -90,9 +94,9 @@ body{
 }
 
 @keyframes headerani{
-	0%{background-image: url(../img/header/header.png)}
-	25%{background-image: url(../img/header/header2.png)}
-	50%{background-image: url(../img/header/header3.png)}
-	75%{background-image: url(../img/header/header4.png)}
-	100%{background-image: url(../img/header/header5.png)}
+	0%{background-image: url(../img/header/header.webp)}
+	25%{background-image: url(../img/header/header2.webp)}
+	50%{background-image: url(../img/header/header3.webp)}
+	75%{background-image: url(../img/header/header4.webp)}
+	100%{background-image: url(../img/header/header5.webp)}
 }

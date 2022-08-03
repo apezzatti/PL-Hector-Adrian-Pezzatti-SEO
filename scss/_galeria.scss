@@ -33,7 +33,7 @@
         p{
 			font-size: $font18;
 			background-color: $bg-black;
-			color: $colorwhite;
+			color: map-get($map:$colores,$key:'blanco');
 			font-family: $fuenteprimaria;
             text-align: center;
 		}

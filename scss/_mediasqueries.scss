@@ -2,7 +2,7 @@
 
 /* SECCION INDEX */
 
-@media (min-width: 280px) and (max-width: 480px){
+@include medias(celular){
 
 	/* DEFINO TAMAÑO DEL LOGO*/
 
@@ -38,7 +38,7 @@
 
 /*SECCION EQUIPOS*/
 
-	@media (min-width: 280px) and (max-width: 480px){
+	@include medias(celular){
 
 		/*APLICO TAMAÑO AL H1*/
 		.mes{ 
@@ -61,7 +61,7 @@
 
 /* SECCION DE GALERIA */
 
-	@media (min-width: 280px) and (max-width: 480px){
+	@include medias(celular){
 
 		/*DEFINO TAMAÑO DEL HEADER*/
 
@@ -75,9 +75,13 @@
 		.videogaleria{
 			grid-template-columns: repeat(1, 1fr);
 			justify-items: center;
-			
-			img{
-				width: $vw-90;
+			div{
+
+				align-content: center;
+
+				img{
+					width: $vw-90;
+				}
 			}
 		}
 
@@ -85,6 +89,7 @@
 
 		.titulosgaleria{
 			p{
+			width:$vw-90;
 			flex-direction: row;
 			font-size: $font14;
 			text-align: center;
