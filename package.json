@@ -1,14 +1,18 @@
 {
-  "name": "desafio-sass",
-  "version": "1.0.0",
-  "description": "",
+  "name": "palomar-vapor",
+  "version": "1.0.3",
+  "description": "Sitio Web Palomar Vapor",
   "main": "index.js",
+  "repository": {
+  "type":"git",
+  "url": "https://github.com/apezzatti/PL-Hector-Adrian-Pezzatti-SEO.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
 		"sass:watch": "sass --watch scss/estilos.scss  css/estilos.css"
   },
-  "author": "",
+  "author": "Adrian Pezzatti",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.54.0"
