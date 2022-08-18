@@ -23,4 +23,11 @@
 			@content;
 		}
 	}
+
+	@if $breakpoint == tablet{
+		@media (min-width: 481px) and (max-width: 1024px){
+
+			@content;
+		}
+	}
 }

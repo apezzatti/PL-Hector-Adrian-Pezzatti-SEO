@@ -114,8 +114,8 @@ body {
   background-color: black;
 }
 .botoneraprincipal img {
-  width: 10vw;
-  height: 18vh;
+  width: 20%;
+  height: auto;
   margin: 15px;
   border-radius: 100%;
   opacity: 70%;
@@ -147,8 +147,9 @@ footer img {
 /*APLICO PROPIEDADES Y ANIMACIONES A LA SECCION EQUIPOS*/
 /*SECCION DESTACADO DEL MES*/
 .mes img {
-  width: 70%;
-  height: 30%;
+  width: 55%;
+  height: 25%;
+  margin-bottom: 4em;
   border: 3px solid black;
   border-radius: 10px;
   animation: traslado 5s;
@@ -165,6 +166,29 @@ footer img {
   }
   animation-timing-function: ease-in-out;
 }
+/* MODIFICO PROPIEDADES DE LOS BOTONES*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 1em;
+  color: #08298A;
+  font-family: "Recursive", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  color: #190710;
+  font-family: "Recursive", sans-serif;
+  font-weight: 700;
+}
+
 /*APLICO GRID Y FLEX BOX EN SECCION GALERIA*/
 /*DEFINO LA CANTIDAD DE COLUMNAS*/
 .videogaleria {
@@ -204,10 +228,16 @@ footer img {
 /* SECCION INDEX */
 @media (min-width: 280px) and (max-width: 480px) {
   /* DEFINO TAMAÑO DEL LOGO*/
-  .botoneraprincipal img {
-    width: 15vw;
-    height: 7vh;
-    margin-top: 10px;
+  .botoneraprincipal .container-fluid {
+    flex-direction: column;
+  }
+  .botoneraprincipal .container-fluid .navbar-brand {
+    text-align: center;
+  }
+  .botoneraprincipal .container-fluid .navbar-brand img {
+    width: 40%;
+    height: auto;
+    margin-top: 3px;
   }
   /*DEFINO TAMAÑO DEL IFRAME*/
   .iframe {
@@ -224,13 +254,20 @@ footer img {
     font-size: 1.4rem;
   }
 }
+@media (min-width: 481px) and (max-width: 1024px) {
+  .botoneraprincipal .container-fluid {
+    justify-content: flex-end;
+  }
+  .botoneraprincipal .container-fluid .navbar-nav {
+    align-items: flex-end;
+  }
+}
 /*SECCION EQUIPOS*/
 @media (min-width: 280px) and (max-width: 480px) {
   /*APLICO TAMAÑO AL H1*/
   .mes h1 {
     font-size: 2.8rem;
   }
-  /*AJUSTO TAMAÑO DE LA IMAGEN DEL MES*/
   .mes img {
     width: 75vw;
     margin-bottom: 15px;

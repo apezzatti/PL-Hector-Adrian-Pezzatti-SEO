@@ -7,12 +7,24 @@
 	/* DEFINO TAMAÑO DEL LOGO*/
 
 	.botoneraprincipal {
-		
-		img{
-			width: $vw-15;
-			height: $vh-7;
-			margin-top: 10px;
-		}
+
+		.container-fluid{
+
+			flex-direction: column;
+			
+			.navbar-brand{
+
+				text-align: center;
+
+				img{
+					width: 40%;
+					height: $h-auto;
+					margin-top: 3px;
+				}
+
+			}
+				
+		}	
 	}
 
 	/*DEFINO TAMAÑO DEL IFRAME*/
@@ -36,6 +48,20 @@
 	}
 }
 
+@include medias(tablet){
+	
+.botoneraprincipal {	
+
+	.container-fluid{
+		justify-content: flex-end;
+		
+			.navbar-nav{
+				align-items: flex-end;
+			}
+		}
+	}
+}
+
 /*SECCION EQUIPOS*/
 
 	@include medias(celular){
@@ -46,18 +72,15 @@
 			h1{
 				font-size: $font28;
 			}
-		}
-	
-		/*AJUSTO TAMAÑO DE LA IMAGEN DEL MES*/
-		
-		.mes {
-			
+
 			img{
 				width: $vw-75;
 				margin-bottom: 15px;
 			}
 		}
+	
 	}
+
 
 /* SECCION DE GALERIA */
 

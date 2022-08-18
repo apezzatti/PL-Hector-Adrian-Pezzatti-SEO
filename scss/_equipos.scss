@@ -3,8 +3,9 @@
 	/*SECCION DESTACADO DEL MES*/
 
 	.mes img{
-		width: $w-70;
-		height: $h-30;
+		width: $w-55;
+		height: $h-25;
+		margin-bottom: $e-4;
 		border: $borderblack;
 		border-radius: $borderradius2;
 		animation: traslado 5s;
@@ -22,3 +23,28 @@
 			animation-timing-function:ease-in-out;
             
 		}
+
+/* MODIFICO PROPIEDADES DE LOS BOTONES*/
+
+.cards{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.card-title{
+	text-align: center;
+	margin-top: 1em;
+	color: map-get($map:$colores,$key:'azul');
+	font-family: $fuentesecundaria;
+	font-size: $font14;
+	font-weight: $text-bold;
+}
+
+.card-text {
+	font-size: $font14;
+	color: map-get($map:$colores,$key:'negro');
+	font-family: $fuentesecundaria;
+	font-weight: $text-bold;	
+}
+	
